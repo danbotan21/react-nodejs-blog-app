@@ -1,0 +1,76 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.navbar-blogs ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  column-gap: 40px;
+  justify-content: space-between;
+  padding: 0.4rem 1rem;
+  margin-bottom: 30px;
+}
+.navbar-blogs ul li button a {
+  text-decoration: none;
+}
+
+.navbar-blogs ul li button {
+  outline: none;
+}
+
+.sign-up-button {
+  padding: 6px 17px;
+  background-color: rgb(229, 229, 226);
+  border-radius: 20px;
+  border: 3px solid rgb(18, 18, 18);
+}
+
+.log-in-button {
+  padding: 6px 21px;
+  background-color: rgb(65, 64, 64);
+  border-radius: 20px;
+  border: 3px solid rgb(225, 219, 96);
+}
+
+.auth {
+  display: flex;
+  gap: 32px;
+}
+
+.sign-up {
+  color: red;
+}
+
+.log-in {
+  color: white;
+}
+
+.user-display {
+  font-size: 28px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(132, 44, 215);
+}
+
+.auth {
+  display: flex;
+  margin-left: auto;
+}
+
+@media all and (max-width: 760px) {
+  .navbar-blogs ul {
+    margin-left: 540px;
+    margin-top: 6px;
+  }
+
+  .sign-up-button {
+    width: 100px;
+  }
+
+  .log-in-button {
+    width: 100px;
+    height: 45 px;
+  }
+}

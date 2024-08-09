@@ -1,0 +1,140 @@
+.create-new-blog button {
+  padding: 9px 25px;
+  outline: none;
+  border: 0;
+  margin: 0px 0px 50px 0;
+  font-weight: 400;
+  border-radius: 10px;
+  background-image: linear-gradient(
+    to left,
+    rgb(195, 161, 161),
+    rgb(47, 185, 220)
+  );
+  color: white;
+}
+
+.create-new-blog button a {
+  text-decoration: none;
+  color: white;
+}
+
+.blog {
+  background-image: linear-gradient(to bottom, yellow, aqua);
+  width: 800px;
+  margin: 0 auto;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.blog-sections-content {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.title-blog {
+  max-width: 300px;
+  width: 100%;
+  padding-top: 25px;
+  color: rgb(46, 44, 44);
+}
+.blog-image {
+  margin-top: 35px;
+}
+.img-blog {
+  width: 360px;
+  margin-left: 20px;
+  border-radius: 8px;
+  height: auto;
+}
+
+.extra-info {
+  display: inline-block;
+  margin-top: 50px;
+}
+
+.extra-info button {
+  padding: 16px 23px;
+  outline: none;
+  border: 0;
+  margin-bottom: 50px;
+  margin-right: 8px;
+  font-weight: 600;
+  border-radius: 50px;
+  display: inline-block;
+}
+.read-blog {
+  margin-left: 18px;
+}
+.delete-blog {
+  margin-left: 10px;
+}
+
+.by-author {
+  color: rgb(107, 106, 106);
+  font-size: 20px;
+  font-weight: 600;
+}
+.author {
+  font-size: 24px;
+  color: rgb(32, 30, 31);
+  margin-left: 10px;
+}
+
+.date-created {
+  margin-left: 10px;
+  font-size: 15px;
+  color: rgb(196, 79, 79);
+  font-weight: 600;
+}
+
+@media all and (max-width: 430px) {
+  .parent-blog-posts h1 {
+    font-size: 40px;
+    margin-left: 250px;
+    width: 300px;
+  }
+
+  .create-new-blog button {
+    width: 400px;
+    margin-left: 220px;
+    font-size: 23px;
+  }
+
+  .title-blog {
+    font-size: 35px;
+  }
+}
+
+@media all and (min-width: 431px) and (max-width: 610px) {
+  .parent-blog-posts h1 {
+    font-size: 40px;
+    margin-left: 250px;
+    width: 300px;
+  }
+
+  .create-new-blog button {
+    width: 350px;
+    margin-left: 190px;
+    font-size: 18px;
+  }
+
+  .title-blog {
+    font-size: 35px;
+  }
+}
+
+@media all and (min-width: 611px) and (max-width: 720px) {
+  .create-new-blog button {
+    font-size: 20px;
+    margin-left: 150px;
+
+    width: 370px;
+  }
+
+  .parent-blog-posts h1 {
+    font-size: 40px;
+    margin-left: 260px;
+    width: 300px;
+  }
+}
