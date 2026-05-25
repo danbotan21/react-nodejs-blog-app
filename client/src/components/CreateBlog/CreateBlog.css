@@ -1,0 +1,67 @@
+.create-blog-heading {
+  text-align: center;
+  text-transform: capitalize;
+  font-family: 'Times New Roman', Times, serif;
+  margin-top: -20px;
+  margin-bottom: 120px;
+  font-weight: 600;
+  color: rgb(142, 53, 225);
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 2rem;
+  row-gap: 10px;
+  background-image: linear-gradient(
+    to right,
+    rgb(231, 158, 158),
+    rgb(244, 136, 136)
+  );
+  padding-bottom: 4rem;
+  padding-top: 2rem;
+}
+
+.blogs-input {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.blogs-input label {
+  margin-bottom: 5px;
+  margin-top: 30px;
+  font-weight: 700;
+  color: rgb(55, 55, 55);
+  font-size: 27px;
+}
+
+input {
+  outline: none;
+  border: 2px solid rgb(62, 62, 62);
+  border-radius: 20px;
+  padding: 0.6rem 1.5rem;
+  box-shadow: 0 0 5pt 0.5pt rgb(12, 10, 10);
+}
+
+textarea {
+  outline: none;
+  border: 1px solid salmon;
+  border-radius: 25px;
+  height: 100px;
+  padding-left: 10px;
+  padding-top: 12px;
+  box-shadow: 0 0 5pt 0.5pt rgb(81, 47, 47);
+}
+
+.btn {
+  background-color: rgb(126, 202, 60);
+  border-radius: 8px;
+  padding: 0.5rem 2rem;
+  font-size: 25px;
+  margin-top: -50px;
+  margin-bottom: 50px;
+  margin-left: 1150px;
+  color: white;
+}
