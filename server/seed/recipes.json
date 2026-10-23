@@ -1,0 +1,47 @@
+[
+  {
+    "title": "Pizza Quattro Formaggi",
+    "author": "Dan",
+    "createdAt": "2023-03-05T18:20:00.000Z",
+    "imageUrl": "https://veneto.ro/wp-content/uploads/2020/09/veneto-pizza-quatro-formaggi.png",
+    "description": "A white pizza topped with four cheeses: mozzarella, gorgonzola, parmesan and fontina. No tomato sauce, just a crisp crust and a rich, creamy topping.",
+    "benefits": "Four cheeses melt together into a creamy, salty and slightly sharp topping. It is simple to make and always a crowd favourite.",
+    "howToPrepare": "Stretch fresh or ready-made pizza dough into a thin round. Brush it with olive oil and a little garlic. Spread the mozzarella and fontina, then add small pieces of gorgonzola. Finish with grated parmesan and a pinch of black pepper. Bake at 250°C for 8 to 10 minutes, until the crust is golden and the cheese bubbles."
+  },
+  {
+    "title": "Vegetable Stir-Fry",
+    "author": "Linda Chen",
+    "createdAt": "2023-02-18T17:30:00.000Z",
+    "imageUrl": "https://www.thecookierookie.com/wp-content/uploads/2023/02/featured-vegetable-stir-fry-recipe.jpg",
+    "description": "A colourful mix of fresh vegetables cooked fast in a hot pan with a savoury soy and ginger sauce. Ready in 20 minutes.",
+    "benefits": "Healthy, filling and full of vegetables. It works with whatever you have in the fridge.",
+    "howToPrepare": "Mix soy sauce, honey, grated ginger, garlic and a teaspoon of cornstarch in a small bowl. Heat oil in a wok or large skillet over high heat. Add sliced peppers, broccoli, carrots and snap peas and stir-fry for 4 to 5 minutes, until crisp-tender. Pour in the sauce and toss until it thickens. Serve over rice or noodles."
+  },
+  {
+    "title": "Iced Coffee",
+    "author": "David Wilson",
+    "createdAt": "2023-01-10T09:45:00.000Z",
+    "imageUrl": "https://beautifuleatsandthings.com/wp-content/uploads/2021/06/torani-3-742x1024.jpg",
+    "description": "Chilled coffee served over ice with your choice of milk or cream. A refreshing pick-me-up for hot afternoons.",
+    "benefits": "Cold, refreshing and caffeinated. Making it at home is cheaper than the coffee shop and you control the sweetness.",
+    "howToPrepare": "Brew a strong cup of your favourite coffee and let it cool. Fill a tall glass with ice cubes. Pour in the coffee, leaving room at the top. Add milk or cream to taste. Sweeten with sugar or syrup if you like, stir and enjoy."
+  },
+  {
+    "title": "Green Salad",
+    "author": "Sophia Martinez",
+    "createdAt": "2022-12-02T14:10:00.000Z",
+    "imageUrl": "https://cdn.loveandlemons.com/wp-content/uploads/2021/04/green-salad.jpg",
+    "description": "A light salad of fresh greens, cherry tomatoes and cucumber with a zesty lemon vinaigrette.",
+    "benefits": "Fresh, crunchy and packed with nutrients. It is a great side dish and becomes a full meal with grilled chicken.",
+    "howToPrepare": "Whisk olive oil, lemon juice, mustard, salt and pepper into a vinaigrette. Wash and dry the mixed greens. Add halved cherry tomatoes, sliced cucumber and thin slices of red onion. Drizzle with the vinaigrette and toss right before serving."
+  },
+  {
+    "title": "Chocolate Cake",
+    "author": "Emily Johnson",
+    "createdAt": "2022-11-14T20:00:00.000Z",
+    "imageUrl": "https://joyfoodsunshine.com/wp-content/uploads/2020/08/best-chocolate-cake-recipe-from-scratch-8.jpg",
+    "description": "Layers of moist chocolate cake covered in rich chocolate frosting. A classic dessert for birthdays and weekends.",
+    "benefits": "Rich, moist and very chocolatey. The layers can be baked a day ahead.",
+    "howToPrepare": "Bake two chocolate cake layers and let them cool completely. Whip butter, cocoa powder, powdered sugar and a splash of milk into a smooth frosting. Spread frosting on the first layer and place the second layer on top. Cover the whole cake with the rest of the frosting. Decorate with chocolate shavings or sprinkles."
+  }
+]
