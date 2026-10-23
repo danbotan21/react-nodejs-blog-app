@@ -1,25 +1,19 @@
 import express from 'express'
-
 import cors from 'cors'
-import mongoose from 'mongoose'
-import { config } from 'dotenv'
-config()
-import { BlogsRoute } from './routes/Blogs.js'
-import { AuthRoute } from './routes/Auth.js'
+import { authRoutes } from './routes/auth.js'
+import { postRoutes } from './routes/posts.js'
 
-const app = express()
+export const app = express()
 
+app.use(cors({ origin: process.env.CLIENT_URL || '*' }))
 app.use(express.json())
-app.use(cors())
-app.use('/blogs', BlogsRoute)
-app.use('/auth', AuthRoute)
 
-mongoose.connect(
-  process.env.MONGODB_URI,
-  {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  }
-)
+app.use('/api/auth', authRoutes)
+app.use('/api/posts', postRoutes)
 
-app.listen(3001, () => console.log('Server Started'))
+app.use((req, res) => res.status(404).json({ message: 'Not found.' }))
+
+app.use((err, req, res, next) => {
+  console.error(err)
+  res.status(500).json({ message: 'Something went wrong on the server.' })
+})

@@ -1,30 +1,17 @@
 import mongoose from 'mongoose'
 
-const UserSchema = new mongoose.Schema({
-  name: {
-    type: String,
-    required: true,
-    unique: true,
+const userSchema = new mongoose.Schema(
+  {
+    name: { type: String, required: true, unique: true, trim: true },
+    email: { type: String, required: true, unique: true, trim: true, lowercase: true },
+    password: { type: String, required: true, select: false },
   },
-  email: {
-    type: String,
-    required: true,
-    unique: true,
-  },
+  { timestamps: true }
+)
 
-  password: {
-    type: String,
-    required: true,
-  },
+// What the API sends back about a user (never the password hash)
+userSchema.methods.toPublic = function () {
+  return { id: this._id, name: this.name, email: this.email }
+}
 
-  confirmPassword: {
-    type: String,
-    required: true,
-    select: false,
-  },
-  token: {
-    type: String,
-  },
-})
-
-export const User = mongoose.model('users', UserSchema)
+export const User = mongoose.model('User', userSchema, 'users')
