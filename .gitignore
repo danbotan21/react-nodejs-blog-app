@@ -4,3 +4,7 @@ dist/
 build/
 *.log
 .env
+
+# local secrets
+*.env
+!.env.example

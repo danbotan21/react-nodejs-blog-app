@@ -3,6 +3,7 @@ import express from 'express'
 import cors from 'cors'
 import mongoose from 'mongoose'
 import { config } from 'dotenv'
+config()
 import { BlogsRoute } from './routes/Blogs.js'
 import { AuthRoute } from './routes/Auth.js'
 
@@ -14,7 +15,7 @@ app.use('/blogs', BlogsRoute)
 app.use('/auth', AuthRoute)
 
 mongoose.connect(
-  `mongodb+srv://dan14:It1Ysr48dounyyB6@cluster0.x5gym0b.mongodb.net/Blog?retryWrites=true&w=majority`,
+  process.env.MONGODB_URI,
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,

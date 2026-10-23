@@ -25,7 +25,7 @@ export const authenticateToken = (req, res, next) => {
 
   jwt.verify(
     token,
-    process.env.JWT_SECRET ?? 'EUASTAZIVOIINVATASAFACUNBLOGAPPSISPERSASEPRIMEASCABINE',
+    process.env.JWT_SECRET,
     (err, user) => {
       if (err) {
         return res.status(403).json({
@@ -86,7 +86,7 @@ router.post('/sign-up', async (req, res) => {
 
     const token = jwt.sign(
       { userId: newUser._id },
-      process.env.JWT_SECRET ?? 'EUASTAZIVOIINVATASAFACUNBLOGAPPSISPERSASEPRIMEASCABINE',
+      process.env.JWT_SECRET,
       {
         expiresIn: '2h',
       }
@@ -144,7 +144,7 @@ router.post('/login', async (req, res) => {
 
     const token = jwt.sign(
       { userId: user._id, email: normalizedEmail },
-      process.env.JWT_SECRET ?? 'EUASTAZIVOIINVATASAFACUNBLOGAPPSISPERSASEPRIMEASCABINE',
+      process.env.JWT_SECRET,
       {
         expiresIn: '2h',
       }
